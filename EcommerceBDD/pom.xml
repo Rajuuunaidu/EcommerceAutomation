@@ -114,7 +114,7 @@
         <parallel>classes</parallel>
         <includes>
         <include>UIRunner.java</include>
-        <include>RestApiRunner.java</include>
+       
         </includes>
         <useUnlimitedThreads>true</useUnlimitedThreads>
     </configuration>
