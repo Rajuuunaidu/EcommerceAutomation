@@ -12,7 +12,7 @@ import ecommerce.ui.stepdefinitions.BaseTestClass;
 @CucumberOptions(features = { "classpath:UIAutomation/cart.feature" }, glue = "ecommerce.ui.stepdefinitions",
 
 		plugin = {
-				"com.cucumber.listener.ExtentCucumberFormatter:C:\\Users\\Raju_Pyla\\eclipse-workspace\\EcommerceBDD\\Reports\\report.html" })
+				"com.cucumber.listener.ExtentCucumberFormatter:C:\\Users\\Raju_Pyla\\eclipse-workspace\\EcommerceBDD\\Reports\\report.html" ,"json:Reports/cucumber.json"})
 
 public class UIRunner extends BaseTestClass {
 	
