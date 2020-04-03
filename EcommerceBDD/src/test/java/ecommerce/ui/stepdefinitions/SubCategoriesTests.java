@@ -1,7 +1,8 @@
 package ecommerce.ui.stepdefinitions;
 
-import static org.testng.Assert.assertTrue;
 
+
+import org.junit.Assert;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import ecommerce.pages.CategoryPage;
@@ -17,9 +18,9 @@ public class SubCategoriesTests extends BaseTestClass{
 		subcategory = new SubCategory(driver);
 		category.selectCategory("Electronics");
 		isDisplayed = subcategory.isDisplayed("Mobiles");
-		assertTrue(isDisplayed);
+		Assert.assertTrue(isDisplayed);
 		isDisplayed = subcategory.isDisplayed("HomeAppliances");
-		assertTrue(isDisplayed);
+		Assert.assertTrue(isDisplayed);
 		driver.navigate().back();
 		
 	}
@@ -29,9 +30,9 @@ public class SubCategoriesTests extends BaseTestClass{
 		//subcategory = new SubCategory(driver);
 		category.selectCategory("Fashion");
 		isDisplayed = subcategory.isDisplayed("Men");
-		assertTrue(isDisplayed);
+		Assert.assertTrue(isDisplayed);
 		isDisplayed = subcategory.isDisplayed("Women");
-		assertTrue(isDisplayed);
+		Assert.assertTrue(isDisplayed);
 		
 	}
 	@Then("^subcategory should be displayed$")
